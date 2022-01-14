@@ -70,8 +70,23 @@
         NSLog(@"cos: input error!");
         return @"Error input!";
     }
-    double result=cos([content doubleValue]);
-    return [NSString stringWithFormat:@"%f",result];
+//    double result=cos([content doubleValue]);
+//    return [NSString stringWithFormat:@"%f",result];
+    
+    int n = [content intValue];
+    
+    int tmpSum = 1;
+        for(int i = 1; i <= n; i++)
+        {
+            
+            tmpSum *= i;
+            
+        }
+    return [NSString stringWithFormat:@"%d",tmpSum];
+    
+    
+    
+    
 }
 
 /** tan函数*/
